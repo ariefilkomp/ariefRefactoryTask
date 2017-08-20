@@ -44,7 +44,7 @@ export default class App extends React.Component {
     this.getView = this.getView.bind(this);
   }
 
-  getView(vname) {
+  getView(vname) {    
     this.setState({viewName:vname});
   }
 
@@ -120,3 +120,4 @@ const styles = StyleSheet.create({
     padding:10
   }
 });
+/* task 2 finish */

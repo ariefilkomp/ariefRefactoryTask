@@ -77,5 +77,4 @@ import {
         </View>
       </View>);
     }
-
   }

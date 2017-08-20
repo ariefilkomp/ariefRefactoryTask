@@ -9,9 +9,9 @@ import {
 
   export class UpdateComponent extends React.Component {
     constructor(props){
-      super(props);
-      this.state = { postId: this.props.postId,userId:this.props.userId,title:'Title',body:'Body',url:'url' };
-      this.doUpdate = this.doUpdate.bind(this);
+        super(props);
+        this.state = { postId: this.props.postId,userId:this.props.userId,title:'Title',body:'Body',url:'url' };
+        this.doUpdate = this.doUpdate.bind(this);
       }
 
     doUpdate(){
@@ -44,6 +44,7 @@ import {
         console.error(error);
       });
     }
+
     render (){
       return (
       <View>

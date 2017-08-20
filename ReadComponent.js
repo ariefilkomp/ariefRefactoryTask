@@ -25,8 +25,6 @@ import { DeleteComponent } from './DeleteComponent';
 				body: responseJson.body,
 				postId: responseJson.id.toString(),
 				userId: responseJson.userId,
-			}, function() {
-			// do something with new state
 			});
 		})
 		.catch((error) => {

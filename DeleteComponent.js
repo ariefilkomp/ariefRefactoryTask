@@ -9,9 +9,9 @@ import {
 
   export class DeleteComponent extends React.Component {
 	 constructor(props){
-      super(props);
-      this.state = { postId: this.props.postId,userId:this.props.userId,title:'Title',body:'Body',url:'url' };
-      this.doDelete = this.doDelete.bind(this);
+		super(props);
+		this.state = { postId: this.props.postId,userId:this.props.userId,title:'Title',body:'Body',url:'url' };
+		this.doDelete = this.doDelete.bind(this);
       }
 
     doDelete(){
@@ -43,27 +43,27 @@ import {
       });
 	}
 	
-		render (){
-      		return (
+	render (){
+		return (
+		<View>
+			<View style={{justifyContent: 'center'}}>
+				<Text style={{fontSize:20}}>DELETE THIS POST?</Text>
+			</View>
 			<View>
-				<View style={{justifyContent: 'center'}}>
-					<Text style={{fontSize:20}}>DELETE THIS POST?</Text>
-				</View>
-				<View>
-					<Text style={{padding: 5}}>Title: {this.state.title }</Text>
-					<Text style={{padding: 5}}>Body: {this.state.body }</Text>
-				</View>
-				<View>
-						<Button
-						onPress={() => this.doDelete()}
-						title="Delete"
-						color="#db0407"
-						accessibilityLabel="Delete"
-						/>
-				</View>
-				<View>
-					<Text style={{backgroundColor: '#42dfff'}}>Result:{this.state.result}</Text>
-				</View>
-			</View>);
-		}
+				<Text style={{padding: 5}}>Title: {this.state.title }</Text>
+				<Text style={{padding: 5}}>Body: {this.state.body }</Text>
+			</View>
+			<View>
+					<Button
+					onPress={() => this.doDelete()}
+					title="Delete"
+					color="#db0407"
+					accessibilityLabel="Delete"
+					/>
+			</View>
+			<View>
+				<Text style={{backgroundColor: '#42dfff'}}>Result:{this.state.result}</Text>
+			</View>
+		</View>);
+	}
   }
